@@ -59,3 +59,6 @@ vnoremap K :m '<-2<CR>gv=gv
 nnoremap <leader>vwm :colorscheme gruvbox<bar>:set background=dark<CR>
 vnoremap X "_d
 inoremap <C-c> <esc>
+map <leader>vm :vsp $MYVIMRC<CR>
+map <leader>sv :source $MYVIMRC<CR>
+map <F8> :w <CR> :!gcc % -o %< && ./%< <CR>
