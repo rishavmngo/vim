@@ -59,6 +59,6 @@ vnoremap K :m '<-2<CR>gv=gv
 nnoremap <leader>vwm :colorscheme gruvbox<bar>:set background=dark<CR>
 vnoremap X "_d
 inoremap <C-c> <esc>
-map <leader>vm :vsp $MYVIMRC<CR>
-map <leader>sv :source $MYVIMRC<CR>
-map <F8> :w <CR> :!gcc % -o %< && ./%< <CR>
+map <leader>vm :vsp $MYVIMRC<CR>   "open my .vimrc file in a vertical window"
+map <leader>sv :source $MYVIMRC<CR>    
+map <F8> :w <CR> :!gcc % -o %< && ./%< <CR> "compile and run .c file"
