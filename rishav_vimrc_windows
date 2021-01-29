@@ -1,0 +1,22 @@
+syntax on
+set clipboard=unnamed
+set nu
+set ts=4
+set sw=4
+set smartindent
+set relativenumber
+set noswapfile
+set incsearch
+autocmd filetype c nnoremap <F4> :!gcc -Wall % && a <CR>
+autocmd filetype cpp nnoremap <F4> :!g++ % && a <CR>
+cd C:\Users\Rishavmngo\Documents\My_work\Clang
+if has("gui_running")
+  if has("gui_gtk2")
+    set guifont=Inconsolata\ 12
+  elseif has("gui_macvim")
+    set guifont=Menlo\ Regular:h14
+  elseif has("gui_win32")
+    set guifont=Consolas:h11:cANSI
+  endif
+endif
+
