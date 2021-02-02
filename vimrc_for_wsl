@@ -1,0 +1,23 @@
+set nu
+set cb=unnamedplus
+set relativenumber
+syntax on
+set smartindent
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+set nowrap
+set smartcase
+set incsearch
+set colorcolumn=80
+highlight ColorColumn ctermbg=0 
+
+map <F4> :w <CR> :!gcc % && ./a.out <CR>
+"map <C-c> :!cat % | clip.exe <CR>
+"map <C-c> :!cat % 
+map <C-v> :r ~/.vimbuffer<CR>
+vmap <C-c> :w! ~/.vimbuffer \| !cat ~/.vimbuffer \| clip.exe <CR><CR>
+
+
+
