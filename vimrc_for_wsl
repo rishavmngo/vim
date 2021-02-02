@@ -18,6 +18,6 @@ map <F4> :w <CR> :!gcc % && ./a.out <CR>
 "map <C-c> :!cat % 
 map <C-v> :r ~/.vimbuffer<CR>
 vmap <C-c> :w! ~/.vimbuffer \| !cat ~/.vimbuffer \| clip.exe <CR><CR>
-
+map <C-a> ggvG <CR>
 
 
